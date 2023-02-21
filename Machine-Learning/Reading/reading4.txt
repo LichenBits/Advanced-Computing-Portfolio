@@ -1,0 +1,11 @@
+Sam Grivas
+
+write a for-loop to compute the dot product
+for i in range(len(arrX)):
+    value = arrX[i] * arrY[i]
+    dp += value
+What is stochastic gradient descent?
+a method for computing the cost gradient for large datasets. the difference with stochastic gradient descent is that we don't accumulate the weight updates? I still don't fully understand how this works 
+What is mini-batch stochastic gradient descent
+computing the gradient against random batches and estimating the gradient based on one of the subsets of the training set 
+What questions do you have about the reading?

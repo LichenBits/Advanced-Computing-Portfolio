@@ -1,0 +1,28 @@
+Sam Grivas
+Advanced Computing 
+
+supervised learning
+I believe many text recognition softwares use supervised learning. providing sets of characters from different sources, photos, screenshots etc and correct answers for what those characters are 
+
+unsupervised learning
+I'm not sure what software uses unsupervised learning techniques but the difference between supervised and unsupervised is the the providing of correct answers, where unsupervised doesn't provide them and instead the algorithm tries to identify similarities between the inputs that have something in common. I'd imagine something similar to this is used for social media feeds where the things that a user likes are added to the data set and grouped up with similar things they and others have liked in order to predict more content the user will like
+
+reinforcement learning
+I think reinforcement learning is used with voice generation ai software in which correct solutions are provided but the ai isn't told how to correct itself
+
+evolutionary learning
+I believe this type of learning is used in genetic algorithms. I believe the idea is that a population of candidate solutions to an optimization problem is evolved towards better solutions. each iteration is called a generation and in each generation the fitness of every individual of the population is evaluated
+
+overfitting problem
+This is when too much training is provided reducing the generalisation capabilities of the network as it begins to learn the outliers and variations we'll end up with something less generalized and more complicated
+
+classification problem
+This consists of taking input vectors and deciding which of n classes they belong to based on training from exemplars of each class
+
+regression problem
+describing a curve that will get as close to all points in a set of data as possible
+
+What questions do you have about the reading?
+
+Could you briefly go over the coin example in class?
+

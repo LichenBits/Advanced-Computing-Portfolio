@@ -1,0 +1,15 @@
+Expectation
+    multiply the payoff for each possibility with the probability of that thing happening
+
+Variance 
+    a measure of how spread out values are
+    sum of the squared distances between each element in the set and the expected value of the set
+    square root of variance is Standard Deviation
+
+Covariance 
+a measure of how dependent two variables are in the statistical sense
+if two variables are Independent the the covariance is 0 (uncorrelated)
+if they both increase and decrease at tthe same time then the covariance is positive and if one goes up while the other goes down it's negative
+
+
+AND gate 

@@ -1,0 +1,8 @@
+Brianna
+Carter Gunderson
+Griffin Loiselle
+
+We read in a csv file as a dataframe and found missing data and counted 
+frequencies of different values
+
+A csv file we had was formatted incorrectly which caused issues when we tried to do anything with the data. We recognized the csv file was the cause of our issue and were able to find a csv file that worked.
