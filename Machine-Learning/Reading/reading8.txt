@@ -1,0 +1,11 @@
+What is a kernel function for SVM?
+
+How are slack variables used?
+
+What is the margin in a support vector machine?
+the margin is the largest region we can put that separates the classes without ther ebeing any poitns inside, wheret he box is made from two lines that are parallel to the decision boundary
+
+What are the constraint that should be satisfied for SVM? Write it in English. If you can, write the equation.
+
+What questions do you have about the reading?
+unfortunately i can't pinpoint any specific question but a lot of this chapter is going over my head 

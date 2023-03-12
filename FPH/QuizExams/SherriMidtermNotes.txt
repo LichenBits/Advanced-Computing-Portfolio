@@ -1,0 +1,36 @@
+
+
+1. (7/10)
+this:
+[(+1) 1 | 1 <- [1,2,3]]
+doesns't make sense since 1 can't be on the lefthand side of f<-
+your (b) also uses very unclear syntax! 
+and you can't "compare all elements in a list to a predicate"
+2. (11/15)
+this not how a list comprehension works.
+3. (12/15)
+Well ... elem is partiall applied. But not.any (`elem` ys) is the composition.
+4. (13/15)
+You have your comparison reveresd:
+ghci> unknown5 (<5) [4,6,7]
+[4]
+ghci>
+you have your second example correct. (this is filter)
+5. (15/15)
+good
+6. (10/15)
+Why this type? Ord a => [a] -> [(a)] -> Bool
+
+what is [(a)]
+
+and why a second list? Your example only uses one list.
+
+7. (14/15)
+Eq a, not Ord a
+you have both, which did you mean?
+not the amount of times but the length of the run.
+
+8. (14/15)
+good
+
+96/115

@@ -1,0 +1,12 @@
+1. What is a time series?
+a series of data indexed in time order 
+2. What is the difference between training and validation error?
+
+3. How would you determine when to stop training to avoid overfitting?
+
+What is your level of understanding of chapter 4:
+0%, 25%, 50%, 75%, 100%?
+
+25%
+
+What questions do you have about the reading?

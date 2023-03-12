@@ -1,0 +1,13 @@
+What is a constrained optimization problem?
+a constrained optimization problem is a problem of finding an optimal solution for a function that has a set of constraints that must be satisfied 
+
+What is a support vector?
+support vectors are the points of data that lie closest to the margin, these points are the most important for defining our classification 
+
+What is the margin in a support vector machine?
+the margin is the largest region we can put that separates the classes without ther ebeing any poitns inside, wheret he box is made from two lines that are parallel to the decision boundary
+
+What is the constraint that should be satisfied? Write it in English. If you can, write the equation.
+minimise (1/2)w^Tw 
+find a decision boundary that classifies well while also making w^Tw as small as possible
+What questions do you have about the reading?

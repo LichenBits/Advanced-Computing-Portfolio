@@ -66,21 +66,27 @@ Note that the S constructor takes an argument of type Nat.
 Ie S Z is equivalent to 1.
 
 1. Make the Nat equivalent of the following integers:
-zero =
-one =
-two =
-three =
-four =
 
-2. Write a function mkNat that takes an Int and
+> zero = Z
+> one = (S Z)
+> two = S (S Z)
+> three = S (S (S Z))
+> four = S (S (S (S Z)))
+
+2. Write a function int2nat that takes an Int and
 constructs the equivalent Nat
 
-mkNat :: Int -> Nat
+> int2nat ::  Int -> Nat
+> int2nat 0 = Z
+> int2nat n = S(int2nat (n-1))
+
 
 3. Write a function that takes a Nat and returns
 the equivalent Int:
 
-toInt :: Nat -> Int
+> nat2int :: Nat -> Int
+> nat2int Z = 0
+> nat2int (S n) = 1 + nat2int n
 
 
 4. Write the comparison operators:
@@ -88,24 +94,55 @@ gt, leq, le, geq, neq
 
 And here is a definition of gt, to get you started:
 
+> gt :: Nat -> Nat -> Bool
 > gt Z (S x) = False
 > gt Z Z = False
 > gt _ Z = True
 > gt (S x) (S y) = gt x y
 
-eq :: Nat -> Nat -> Bool
-neq :: Nat -> Nat -> Bool
-gt :: Nat -> Nat -> Bool
-leq :: Nat -> Nat -> Bool
-geq :: Nat -> Nat -> Bool
-lt :: Nat -> Nat -> Bool
+> eq :: Nat -> Nat -> Bool
+> eq Z (S x) = False
+> eq Z Z = True
+> eq _ Z = False
+> eq (S x) (S y) = True
+
+> neq :: Nat -> Nat -> Bool
+> neq Z (S x) = True
+> neq Z Z = False
+> neq _ Z = True
+> neq (S x) (S y) = False
+
+> leq :: Nat -> Nat -> Bool
+> leq Z (S x) = True
+> leq Z Z = True
+> leq _ Z = False
+> leq (S x) (S y) = True
+
+> geq :: Nat -> Nat -> Bool
+> geq Z (S x) = False
+> geq Z Z = True
+> geq _ Z = True
+> geq (S x) (S y) = True
+
+> lt :: Nat -> Nat -> Bool
+> lt Z (S x) = True
+> lt Z Z = False
+> lt _ Z = False
+> lt (S x) (S y) = True
+
 
 Test your functions.
 
 5. Write the basic arithmetic operators over Nats:
 
-add :: Nat -> Nat -> Nat
-mul :: Nat -> Nat -> Nat
+> add :: Nat -> Nat -> Nat
+> add Z n = n
+> add (S m) n = S (add m n)
+
+> mul :: Nat -> Nat -> Nat
+> mul Z _ = Z
+> mul (S m) n = add n (mul m n)
+
 sub :: Nat -> Nat -> Nat (sub is not total)
 
 Here is a simple example --
@@ -129,12 +166,20 @@ dropN :: Nat -> [a] -> [a]
 
 7. What do the following do?
 ghci> map (\x -> S x) [one, two, three, four]
+
+creates an array of Nats from 1 to 4
+
 ghci> map toInt $ map (\x -> S x) [one, two, three, four]
+
+converts array of Nats to a normal array [1,2,3,4]
 
 
 8. Write the Nat expressions equivalent to:
 
 1 + 2 * 3
+
+
+
 4 * 2 + 4 * 3
 
 9. In nat we are using prefix notation. Can you introduce

@@ -1,0 +1,23 @@
+1. Use Bayes’ rule to solve the following problem: At a party you meet a person who claims to have been to the same school as you. You vaguely recognise them, but 
+can’t remember properly, so decide to work out how likely it is, given that:
+
+• 1 in 2 of the people you vaguely recognise went to school with you
+• 1 in 10 of the people at the party went to school with you
+• 1 in 5 people at the party you vaguely recognise
+
+hypothesis: the person wnet to the same school as you
+data: vaguely recognizing the person
+
+P(B | A) = 1/2
+P(A) = 1/10
+P(B | not A) = 1/5
+
+P(B) = P(B|A) * P(A) + P(B | not A) * P(not A)
+= 1/2 *1/10 + 1/5 *9/10
+=7/50
+
+P(A | B) = P(B | A) * P(A)/P(B)
+=(1/2)*(1/10) /7/50
+=5/7
+
+there is a 5 in 7 chance you went to the same school

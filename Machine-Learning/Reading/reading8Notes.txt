@@ -1,0 +1,41 @@
+modify the data by changing it's represntation
+
+Kernel Functions
+
+it is always possible to transform any set of data so that the classes within it can be separated linearly
+XOR problem in sec 3.4.3
+    added an extra dimension and moved a point that we could not classify properly into that additional dimension so that we can linearly
+    seperate the classes 
+    but how do we work out which dimensions to use 
+    we use kernel methods, in particular SVM
+
+SVM
+    don't work well on large datasets
+    the computations don't scale well withthe number of traning examples 
+    using cvxopt we will develop a simple SVM
+    maximizes the distance between points in either category, the margin
+
+maximum margin classifier 
+
+support vectors
+    datapoints in each class that lie closest to the classifcation line
+
+
+the margins should be as large as possible, and the support vectors are the most useful data points because they are the ones we 
+might get wrong
+
+after traning we can trhow away all of the data except for the support vectors and use them for classification which is useful for 
+saving storage
+
+in chapter 3 we used y = w * x + b for our output
+b is the contribution form the bias weight
+any x value that gives a positive value for w*x + b is above the line 
+any x that givaes a negative value is in the 'o' class
+
+to include the 'no mans land' we'll also check whether the absolute value is less than our margin M 
+
+remember that w * x is the inner or scalar product w · x  = ∑i  wixi (can also be written as w^T x)
+    it just means we're treating the vectors as degenerate matrices and use the normal matrix multiplication rules
+
+for a given margin value M we can say that any point x where w^T x + b >= M is a plus and any point where w^Tx + b <= -M is a circle
+the seperating hyperplane is specified by w^Tx+b = 0
