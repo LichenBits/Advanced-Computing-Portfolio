@@ -1,9 +1,9 @@
  1)  Determine the types of "3", "even", and "even 3". How do you
      determine the last one?
      
-    3 :: Num a => a
-    even :: Integral a => a -> Bool
-    even 3 :: Bool
+ 3 :: Num a => a
+> even :: Integral a => a -> Bool
+> even 3 :: Bool
 
  Now, determine the types of "head", "[1,2,3]", and "head [1,2,3]". What
      happens when applying a polymorphic function to an actual parameter?
@@ -28,6 +28,7 @@
     
 
 3) Write the ncopies function (from Tim Sheard) that works according to the following examples. Code this function first without recursion and then with recursion.
+
     ncopies 3 5  gives [5,5,5]
     ncopies 0 True gives []
     ncopies 2 False gives [False, False]
@@ -61,3 +62,4 @@ This function splits the given list in sub-lists (which result in a list of list
    "167"  --> ['1','6','7'] --> [49,54,55] --> [1,6,7] --> [(1,100),(6,10),(7,1)]
    --> [100, 60, 7] --> 167
    (hint: the first function in the pipeline is very simple. why?)
+

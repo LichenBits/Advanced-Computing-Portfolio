@@ -1,0 +1,5 @@
+1. My goal is to obtain the Responsive Web Design Certification from Freecodecamp.org
+2. I finished a module that covered CSS pseudo selectors, SVG icons, CSS positioning and media queries. The project for this module was to build a technical documentation page using all the skill I've learned thus far
+3. I learned how to specify different styles for different devices, and how to utilize SVG vector graphics in my website. I learned some more intermediate CSS techniques 
+
+https://github.com/LichenBits/Advanced-Computing-Portfolio

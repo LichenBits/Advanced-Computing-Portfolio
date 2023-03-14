@@ -1,8 +1,27 @@
 1. Define a Binary Tree data type (BinT t) with values stored at both leaves and internal nodes. Write the following map and foldr functions on your binary tree data type. Be sure to include tests for your code in your handin.
 
+> data BinT t = Leaf t | Node t (BinT t) (BinT t)
+
+> testTree :: BinT Int
+> testTree = Node 1
+>   (Node 2 (Leaf 4) (Leaf 5))
+>   (Node 3 (Leaf 6) (Leaf 7))
+
     a. mapT - applies a function to every value node in the tree.
 
+> mapT :: (t -> t') -> BinT t -> BinT t'
+> mapT f (Leaf x) = Leaf (f x)
+> mapT f (Node x left right) = Node (f x) (mapT f left) (mapT f right)
+
+
     b. foldrT - folds up all elements in a binary tree with an associative operator (like (+) or (*) but not (-) and not (/) ).
+
+> foldrT :: (t -> b -> b -> b) -> b -> BinT t -> b
+> foldrT f z (Leaf x) = f x z z
+> foldrT f z (Node x left right) = f x (foldrT f z left) (foldrT f z right)
+
+> sumTree :: Int
+> sumTree = foldrT (+) 0 testTree
 
 Expression Trees
 
