@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(48, 46, 43);
+    align-items: center;
+    display: flex;
+  }
+  
+  li { 
+    list-style: none;
+  }
+  
+  #header {
+    position: fixed;
+  }

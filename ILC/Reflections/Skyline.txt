@@ -1,0 +1,5 @@
+https://github.com/LichenBits/Advanced-Computing-Portfolio/tree/main/ILC
+
+In this lesson I learned how CSS variables help organize styles and make them more reusable. This was demonstrated by building a skyline out of CSS flex items and using variables for the color palette.
+
+I didn't have much trouble with this, and I haven't been having a lot of trouble with most of the projects. The only issue is the amount of time it takes to complete. This one took me around 3 hours to finish 
